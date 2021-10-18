@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 62.5%;
+    background-color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain{
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.acordes{
+/*     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    width: auto;
+/*     border-radius: 50px; */
+    margin-left: 4em;
+}
+
+.acordes img{
+    width: 50em;
+    padding: 2em;
+}
+
+h1{
+    font-size: 7em;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 100;
+}
+
+.firstChords,
+.lastChords{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5em;
+    width: 100%;
+}
+
+.lastChords{
+    margin: 0;
+}
+
+.select-chords{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5em;
+    border-radius: 5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 40em;
+}
+    
+.select-chords span{
+    font-size: 5em;
+}
+
+.fa-sort-down,
+.fa-sort-up{
+    font-size: 5em;
+    cursor: pointer;
+}
+
+.fa-check{
+    font-size: 4em;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+@media(max-width: 1020px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .acordes{
+        margin-left: 0;
+    }
+    .acordes img{
+        width: 35em;
+        padding: 2em;
+    }
+
+    .select-chords{
+        padding: 2em;
+        width: 30em;
+    }
+
+    .firstChords{
+        margin-right: 0em;
+        width: 10em;
+    }
+
+    .select-chords span{
+        font-size: 3em;
+        justify-content: space-evenly;
+    }
+
+    .fa-check{
+        font-size: 4em;
+        margin-left: 0;
+    }
+
+    .fa-sort-down,
+    .fa-sort-up{
+        font-size: 4em;
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 2.3rem;
+    }
+
+    .fa-check{
+        font-size: 3em;
+    }
+
+    .contain{
+        margin-top: 3em;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50vh;
+    }
+
+    .lastChords{
+        width: auto;
+    }
+    
+    .select-chords{
+        padding: 1.5em;
+        width: 30em;
+        justify-content: space-evenly;
+    }
+    .acordes img{
+        width:35em;
+        padding: 2em;
+    }
+    .fa-sort-down,
+    .fa-sort-up{
+        font-size: 3em;
+    }
+}
